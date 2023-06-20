@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="titleContainer">
+            <h2 class="logo">Andromeda</h2>
+            <h1>Keep Warn Jacket</h1>
+        </div>
+        <img id="jacket" src="./assets/jacket1.png" alt="">
+        <div class="settings">
+            <div class="settingsContainer">
+
+            <div class="color">
+                <h1>color</h1>
+                <ul>
+                    <li onclick="change1()" class="color1 selected"></li>
+                    <li onclick="change2()" class="color2"></li>
+                    <li onclick="change3()" class="color3"></li>
+                </ul>
+            </div>
+            <h1 class="sizeTitle">SIZE</h1>
+            <div class="size">
+
+                <div onclick="activar()" class="sizes">
+                    <h1>S</h1>
+                </div>
+
+                <div class="sizes active">
+                    <h1>M</h1>
+                </div>
+                
+                <div class="sizes">
+                    <h1>L</h1>
+
+                </div>
+
+                <div class="sizes"> 
+                    <h1>XL</h1>
+                </div>
+            </div>
+
+            <div class="sleeve">
+                <div>
+                    <h1>SLEEVE LENGHT</h1>
+                    <span class="sleevT">66cm</span>
+                </div>
+                <input onchange="mudar()" type="range" value="1" min="1" max="200" id="inputSleeve">
+            </div>
+            <div class="chest">
+                <div>
+                    <h1>CHEST</h1>
+                    <span class="chestT">102cm</span>
+                </div>
+                <input type="range" value="1" min="1" max="200" id="inputChest">
+            </div>
+
+            <div class="buttonContainer">
+                <button id="update">UPDATE</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
